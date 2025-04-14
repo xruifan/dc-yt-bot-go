@@ -1,4 +1,4 @@
-package SlashCommandHandler
+package slashcommand
 
 import (
 	"errors"

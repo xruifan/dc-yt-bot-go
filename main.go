@@ -1,9 +1,9 @@
 package main
 
 import (
-	"dc-bot/BotController"
+	"dc-bot/controller"
 )
 
 func main() {
-	BotController.Start()
+	controller.Start()
 }

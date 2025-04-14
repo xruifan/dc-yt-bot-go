@@ -1,7 +1,7 @@
-package BotController
+package controller
 
 import (
-	"dc-bot/BotController/Handlers/SlashCommandHandler"
+	"dc-bot/controller/handler/slashcommand"
 	"github.com/bwmarrin/discordgo"
 	"github.com/joho/godotenv"
 	"github.com/sirupsen/logrus"
@@ -37,7 +37,7 @@ func Start() {
 	}
 
 	// Register handlers
-	SlashCommandHandler.RegisterHandlers(sess, &wg)
+	slashcommand.RegisterHandlers(sess, &wg)
 
 	// Set intents
 	sess.Identify.Intents = discordgo.IntentsAllWithoutPrivileged
