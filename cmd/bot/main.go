@@ -1,7 +1,7 @@
 package main
 
 import (
-	"dc-bot/controller"
+	"dc-bot/internal/controller"
 )
 
 func main() {

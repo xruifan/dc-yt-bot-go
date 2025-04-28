@@ -57,7 +57,7 @@ func RegisterHandlers(s *discordgo.Session, wg *sync.WaitGroup) {
 	logrus.Debug("Slash command registered successfully.")
 
 	// Use anonymous function to pass wg
-	s.AddHandler(func(s *discordgo.Session, i interface{}) {
+	s.AddHandler(func(s *discordgo.Session, i any) {
 		// Type assertion to handle specific event type
 		if interaction, ok := i.(*discordgo.InteractionCreate); ok {
 			playAudioHandler(s, interaction, wg)

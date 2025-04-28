@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"dc-bot/controller/handler/slashcommand"
+	"dc-bot/internal/controller/handler/slashcommand"
 	"github.com/bwmarrin/discordgo"
 	"github.com/joho/godotenv"
 	"github.com/sirupsen/logrus"
